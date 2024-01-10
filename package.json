@@ -1,6 +1,6 @@
 {
   "name": "@zacharygriffee/rollup-plugin-external-globals",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "Transform external imports into global variables like output.globals.",
   "keywords": [
@@ -22,8 +22,7 @@
     "bring-your-own-storage-utilities": "^0.0.74",
     "brittle": "^3.3.2",
     "c8": "^8.0.1",
-    "rollup": "^4.1.4",
-    "tempdir-yaml": "^0.3.0"
+    "rollup": "^4.1.4"
   },
   "dependencies": {
     "estree-walker": "^3.0.3",
