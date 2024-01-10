@@ -1,24 +1,22 @@
-rollup-plugin-external-globals
+@zacharygriffee/rollup-plugin-external-globals
 ==============================
 
-[![test](https://github.com/eight04/rollup-plugin-external-globals/actions/workflows/test.yml/badge.svg)](https://github.com/eight04/rollup-plugin-external-globals/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/eight04/rollup-plugin-external-globals/branch/master/graph/badge.svg)](https://codecov.io/gh/eight04/rollup-plugin-external-globals)
-[![install size](https://packagephobia.now.sh/badge?p=rollup-plugin-external-globals)](https://packagephobia.now.sh/result?p=rollup-plugin-external-globals)
+[//]: # (Transform external imports into global variables like Rollup's `output.globals` option. See [rollup/rollup#2374]&#40;https://github.com/rollup/rollup/issues/2374&#41;)
 
-Transform external imports into global variables like Rollup's `output.globals` option. See [rollup/rollup#2374](https://github.com/rollup/rollup/issues/2374)
+### Modification of original `rollup-plugin-external-globals`.
 
 Installation
 ------------
 
 ```
-npm install -D rollup-plugin-external-globals
+npm install -D @zacharygriffee/rollup-plugin-external-globals
 ```
 
 Usage
 -----
 
 ```js
-import externalGlobals from "rollup-plugin-external-globals";
+import externalGlobals from "@zacharygriffee/rollup-plugin-external-globals";
 
 export default {
   input: ["entry.js"],
