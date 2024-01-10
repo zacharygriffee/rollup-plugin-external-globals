@@ -1,4 +1,4 @@
-import createPlugin from "../index.js";
+import externalGlobals from "../index.js";
 import * as Deploy from "bring-your-own-storage-utilities/deploy"
 import {test, solo} from "brittle";
 
@@ -11,7 +11,7 @@ async function bundle(file, content, globals, globalsOptions, rollupConfig = {})
       "the-answer": `export default 42;`,
       [file]: content
     }),
-    createPlugin(globals, globalsOptions)
+    externalGlobals(globals, globalsOptions)
   ];
   rollupConfig.onwarn = (warn) => warns.push(warn);
   const {code} = await pack(file, rollupConfig);

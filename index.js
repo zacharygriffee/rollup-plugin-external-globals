@@ -4,7 +4,7 @@ import importToGlobals from "./lib/import-to-globals.js";
 
 const defaultDynamicWrapper = id => `Promise.resolve(${id})`;
 
-function createPlugin(globals, {include, exclude, dynamicWrapper = defaultDynamicWrapper} = {}) {
+function externalGlobals(globals, {include, exclude, dynamicWrapper = defaultDynamicWrapper} = {}) {
     if (!globals) {
         throw new TypeError("Missing mandatory option 'globals'");
     }
@@ -44,4 +44,5 @@ function createPlugin(globals, {include, exclude, dynamicWrapper = defaultDynami
     }
 }
 
-export default createPlugin;
+export {externalGlobals};
+export default externalGlobals;
