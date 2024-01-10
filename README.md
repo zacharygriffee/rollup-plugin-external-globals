@@ -16,7 +16,7 @@ Usage
 -----
 
 ```js
-import externalGlobals from "@zacharygriffee/rollup-plugin-external-globals";
+import { externalGlobals } from "@zacharygriffee/rollup-plugin-external-globals";
 
 export default {
   input: ["entry.js"],
@@ -75,14 +75,17 @@ This module exports a single function.
 ### createPlugin
 
 ```js
-const plugin = createPlugin(
-  globals: Object | Function,
-  {
-    include?: Array,
-    exclude?: Array,
-    dynamicWrapper?: Function
-  } = {}
-);
+const plugin = externalGlobals(
+        globals
+:
+Object | Function,
+        {
+          include? : Array,
+          exclude? : Array,
+          dynamicWrapper? : Function
+        } = {}
+)
+;
 ```
 
 `globals` is a `moduleId`/`variableName` map. For example, to map `jquery` module to `$`:
