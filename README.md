@@ -5,6 +5,10 @@
 
 ### Modification of original `rollup-plugin-external-globals`.
 
+### Changes
+
+- Works in browser
+
 Installation
 ------------
 

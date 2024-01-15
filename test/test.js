@@ -1,6 +1,6 @@
 import externalGlobals from "../index.js";
 import * as Deploy from "bring-your-own-storage-utilities/deploy"
-import {test, solo} from "brittle";
+import {test} from "brittle";
 
 const {pack, rollupVirtualPlugin} = Deploy;
 
